@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "openrouter/deepseek/deepseek-v4.1-flash-1017",
+  "provider": {
+    "openrouter": {
+      "options": {
+        "apiKey": "{env:OPENROUTER_API_KEY}"
+      },
+      "models": {
+        "deepseek/deepseek-v4.1-flash-1017": {}
+      }
+    }
+  },
+  "permission": {
+    "edit": "allow",
+    "external_directory": "deny",
+    "bash": {
+      "*": "ask",
+      "ls *": "allow",
+      "cat *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "find *": "allow",
+      "rg *": "allow",
+      "grep *": "allow",
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "git show *": "allow",
+      "python3 *": "allow",
+      "pytest *": "allow",
+      "rm *": "deny",
+      "rmdir *": "deny",
+      "git push *": "deny",
+      "curl *": "deny",
+      "wget *": "deny",
+      "nc *": "deny"
+    }
+  }
+}

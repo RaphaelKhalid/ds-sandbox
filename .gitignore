@@ -1,0 +1,15 @@
+# per-run scratch: staged copies, menu clones, harvested write-mode results
+work/
+clones/
+out/
+
+# python
+__pycache__/
+*.pyc
+
+# Windows shortcuts hold machine-specific absolute paths
+*.lnk
+
+# machine-specific settings (tailnet name) and k2-chat artwork that isn't published
+ds-chat/local.json
+ds-chat/img/

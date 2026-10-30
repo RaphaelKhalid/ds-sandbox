@@ -1,0 +1,5 @@
+# Files that run inside Linux containers must keep LF line endings on any checkout.
+* text=auto
+Dockerfile text eol=lf
+proxy/** text eol=lf
+*.json text eol=lf
